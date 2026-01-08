@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Tags -->
+    <title>Split PDF Online - Extract Pages from PDF | IloveoPDF</title>
+    <meta name="description" content="Split a PDF file by page ranges or extract all PDF pages to multiple PDF files. High quality, free and secure online PDF splitter.">
+    <meta name="keywords" content="Split PDF, Extract PDF pages, PDF splitter online, free PDF tools">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .upload-zone { 
+            border: 3px dashed #f59e0b; 
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+        .upload-zone:hover { 
+            background: #fffbeb; 
+            transform: scale(1.01);
+            border-color: #d97706;
+        }
+        .step-number {
+            background: #f59e0b;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Navigation (Same as Home) -->
+    <nav class="bg-white shadow-sm border-b border-orange-100 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center">
+                <img src="input_file_0.png" alt="IloveoPDF Logo" class="h-12">
+            </a>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="index.html" class="font-bold text-slate-700 hover:text-orange-500 uppercase text-sm">Home</a>
+                <a href="merge-pdf.html" class="font-bold text-slate-700 hover:text-orange-500 uppercase text-sm">Merge PDF</a>
+                <a href="split-pdf.html" class="font-bold text-orange-600 uppercase text-sm border-b-2 border-orange-500">Split PDF</a>
+                <a href="index.html#tools-grid" class="bg-slate-900 text-white px-5 py-2 rounded-lg font-bold uppercase text-sm hover:bg-orange-600 transition">All Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Tool Section -->
+    <main class="container mx-auto px-4 py-12 md:py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 uppercase">Split PDF file</h1>
+            <p class="text-slate-600 mb-12 text-lg">Separate one page or a whole set for easy conversion into independent PDF files.</p>
+
+            <!-- Drag & Drop Area -->
+            <div id="drop-zone" class="upload-zone rounded-3xl p-12 md:p-20 shadow-2xl cursor-pointer">
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-scissors text-4xl text-orange-500"></i>
+                    </div>
+                    <button class="bg-orange-500 hover:bg-orange-600 text-white text-xl md:text-2xl font-bold px-10 py-5 rounded-2xl shadow-lg transition-all mb-4">
+                        Select PDF file
+                    </button>
+                    <p class="text-slate-400 font-medium">or drop PDF here</p>
+                    <input type="file" id="pdf-input" class="hidden" accept="application/pdf">
+                </div>
+            </div>
+
+            <!-- Instructions Section -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-orange-50">
+                    <h3 class="font-bold text-slate-900 mb-2"><span class="step-number">1</span> Upload</h3>
+                    <p class="text-sm text-slate-500">Select the PDF document you want to split from your computer.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-orange-50">
+                    <h3 class="font-bold text-slate-900 mb-2"><span class="step-number">2</span> Choose Range</h3>
+                    <p class="text-sm text-slate-500">Select 'Split by range' or 'Extract all pages' depending on your needs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-orange-50">
+                    <h3 class="font-bold text-slate-900 mb-2"><span class="step-number">3</span> Download</h3>
+                    <p class="text-sm text-slate-500">Click Split PDF and download your new files instantly.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Content for SEO -->
+    <section class="bg-white py-16 border-t border-orange-100">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Why use our PDF Splitter?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-orange-500 mt-1 mr-4 text-xl"></i>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">100% Secure</h4>
+                        <p class="text-slate-500">We use SSL encryption to ensure that your documents are handled with maximum privacy. Files are deleted after processing.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-bolt text-orange-500 mt-1 mr-4 text-xl"></i>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">Fast Processing</h4>
+                        <p class="text-slate-500">Our cloud servers handle the heavy lifting, allowing you to split even large PDFs in seconds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <img src="input_file_0.png" alt="IloveoPDF Footer" class="h-10 mx-auto mb-6 brightness-200">
+            <p class="text-slate-500 text-sm">© 2024 IloveoPDF. The smart way to split PDF files.</p>
+        </div>
+    </footer>
+
+    <script>
+        const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('pdf-input');
+
+        dropZone.onclick = () => fileInput.click();
+
+        fileInput.onchange = (e) => {
+            if(e.target.files.length > 0) {
+                alert("File '" + e.target.files[0].name + "' selected for splitting!");
+                // Backend processing logic would go here
+            }
+        };
+    </script>
+</body>
+</html>
